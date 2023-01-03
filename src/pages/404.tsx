@@ -11,8 +11,8 @@ const View = () => (
     <p className="mb-12 text-gray-500 dark:text-gray-300 md:text-lg">
       The page you’re looking for doesn’t exist.
     </p>
-    <Link href="/" passHref>
-      <a className="px-10 button">Go home</a>
+    <Link href="/" passHref className="px-10 button">
+      Go home
     </Link>
   </div>
 );

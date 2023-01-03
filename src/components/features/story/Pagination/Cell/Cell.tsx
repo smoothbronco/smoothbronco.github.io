@@ -40,9 +40,7 @@ export const Cell: React.VFC<Props> = ({ cell, page, count }) => {
     default:
       return (
         <Link href={`/posts/page/${cell}`} passHref>
-          <a>
-            <StyledCell active={cell === page}>{cell}</StyledCell>
-          </a>
+          <StyledCell active={cell === page}>{cell}</StyledCell>
         </Link>
       );
   }

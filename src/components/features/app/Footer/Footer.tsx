@@ -10,13 +10,14 @@ export const Footer = () => {
         <div className="vstack items-center gap-4">
           <div className="flex gap-4">
             {sns.map(({ href, icon, label }) => (
-              <Link key={href} href={href} passHref>
-                <a
-                  className="text-neutral-200 hover:text-neutral-500 active:text-gray-600 transition duration-100"
-                  aria-label={label}
-                >
-                  {icon}
-                </a>
+              <Link
+                key={href}
+                href={href}
+                passHref
+                aria-label={label}
+                className="text-neutral-200 hover:text-neutral-500 active:text-gray-600 transition duration-100"
+              >
+                {icon}
               </Link>
             ))}
           </div>

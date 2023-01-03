@@ -10,7 +10,7 @@ export const ConditionalLink = React.forwardRef<
   <>
     {condition ? (
       <Link href={href} passHref {...props} ref={forwardRef}>
-        <a>{children}</a>
+        {children}
       </Link>
     ) : (
       <>{children}</>

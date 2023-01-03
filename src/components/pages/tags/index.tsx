@@ -20,8 +20,8 @@ export const Tags: React.VFC<Props> = ({ tags }) => {
           </div>
           <div className="wrap gap-3">
             {tags.map((tag) => (
-              <Link key={tag} href={`/tags/${tag}`} passHref>
-                <a className="badge">{tag}</a>
+              <Link key={tag} href={`/tags/${tag}`} passHref className="badge">
+                {tag}
               </Link>
             ))}
           </div>
