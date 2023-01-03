@@ -3,7 +3,7 @@ import { getAllPosts } from '@/lib/api';
 
 type Props = React.ComponentPropsWithoutRef<typeof Tag>;
 
-const View: React.VFC<Props> = (props: Props) => <Tag {...props} />;
+const View: React.FC<Props> = (props: Props) => <Tag {...props} />;
 
 export default View;
 

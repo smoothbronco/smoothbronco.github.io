@@ -9,7 +9,7 @@ type Props = {
   count: number;
 };
 
-export const Cell: React.VFC<Props> = ({ cell, page, count }) => {
+export const Cell: React.FC<Props> = ({ cell, page, count }) => {
   switch (cell) {
     case '<':
       return (

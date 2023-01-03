@@ -13,7 +13,7 @@ type Props = {
   post: PostType;
 };
 
-export const Posts: React.VFC<Props> = ({ post }) => {
+export const Posts: React.FC<Props> = ({ post }) => {
   const lg = useBreakPoint('lg');
   const imageURL = joinPath(ROOT_URL, post.ogImage.url);
 

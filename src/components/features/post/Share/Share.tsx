@@ -20,7 +20,7 @@ type Props = {
 
 const SIZE = 40;
 
-export const Share: React.VFC<Props> = ({ post }) => {
+export const Share: React.FC<Props> = ({ post }) => {
   const { title, slug, ogImage } = post;
 
   const url = `${ROOT_URL}/posts/${slug}`;

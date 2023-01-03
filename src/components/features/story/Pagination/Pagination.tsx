@@ -8,7 +8,7 @@ type Props = {
   boundaryCount?: number;
 };
 
-export const Pagination: React.VFC<Props> = (props) => {
+export const Pagination: React.FC<Props> = (props) => {
   const cells = getCells(props);
   const { page, count } = props;
 

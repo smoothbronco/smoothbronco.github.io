@@ -13,7 +13,7 @@ type Props = {
   disabled?: boolean;
 };
 
-export const StyledCell: React.VFC<Props> = ({
+export const StyledCell: React.FC<Props> = ({
   children,
   variant = 'default',
   active,

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { MdOutlineContentCopy } from 'react-icons/md';
 import tocbot from 'tocbot';
 
-export const Toc: React.VFC = () => {
+export const Toc: React.FC = () => {
   useEffect(() => {
     tocbot.init({
       tocSelector: '.toc',

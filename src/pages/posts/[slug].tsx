@@ -4,7 +4,7 @@ import markdownToHtml from '@/lib/markdownToHtml';
 
 type Props = React.ComponentPropsWithoutRef<typeof Posts>;
 
-const View: React.VFC<Props> = (props: Props) => <Posts {...props} />;
+const View: React.FC<Props> = (props: Props) => <Posts {...props} />;
 
 export default View;
 

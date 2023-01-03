@@ -11,7 +11,7 @@ type Props = {
   maxPage: number;
 };
 
-export const Page: React.VFC<Props> = ({ posts, maxPage }) => {
+export const Page: React.FC<Props> = ({ posts, maxPage }) => {
   const page = Number(useRouter().query.page);
 
   return (

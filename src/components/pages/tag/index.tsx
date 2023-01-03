@@ -9,7 +9,7 @@ type Props = {
   posts: PostType[];
 };
 
-export const Tag: React.VFC<Props> = ({ posts }) => {
+export const Tag: React.FC<Props> = ({ posts }) => {
   const tag = useRouter().query.tag;
 
   return (

@@ -1,4 +1,3 @@
-import { Portal } from '@radix-ui/react-portal';
 import { useBreakPoint } from '@/hooks/useBreakPoint';
 import { cn } from '@/lib/cn';
 import { Hamburger } from '../Hamburger';
@@ -10,7 +9,7 @@ type Props = {
   className?: string;
 };
 
-export const MainLayout: React.VFC<Props> = ({
+export const MainLayout: React.FC<Props> = ({
   main,
   aside,
   hamburgerMenu,
@@ -25,11 +24,9 @@ export const MainLayout: React.VFC<Props> = ({
       </div>
       <aside>{aside}</aside>
       {lg || (
-        <Portal>
-          <div className="z-50 fixed left-8 bottom-8">
-            <Hamburger>{hamburgerMenu}</Hamburger>
-          </div>
-        </Portal>
+        <div className="z-50 fixed left-8 bottom-8">
+          <Hamburger>{hamburgerMenu}</Hamburger>
+        </div>
       )}
     </div>
   );

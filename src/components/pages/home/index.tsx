@@ -9,7 +9,7 @@ type Props = {
   posts: PostType[];
 };
 
-export const Home: React.VFC<Props> = ({ posts }) => {
+export const Home: React.FC<Props> = ({ posts }) => {
   return (
     <MainLayout
       main={

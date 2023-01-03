@@ -6,7 +6,7 @@ type Props = {
   post: PostType;
 };
 
-export const Post: React.VFC<Props> = ({ post }) => {
+export const Post: React.FC<Props> = ({ post }) => {
   const { title, coverImage, date, tags, content } = post;
 
   return (

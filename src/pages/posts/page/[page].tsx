@@ -4,7 +4,7 @@ import { getAllPosts, getMaxPage } from '@/lib/api';
 
 type Props = React.ComponentPropsWithoutRef<typeof Page>;
 
-const View: React.VFC<Props> = (props: Props) => <Page {...props} />;
+const View: React.FC<Props> = (props: Props) => <Page {...props} />;
 
 export default View;
 

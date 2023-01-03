@@ -10,7 +10,7 @@ type Props = {
   children?: React.ReactNode;
 };
 
-export const Hamburger: React.VFC<Props> = ({ children }) => {
+export const Hamburger: React.FC<Props> = ({ children }) => {
   return (
     <DropdownMenu
       sideOffset={8}

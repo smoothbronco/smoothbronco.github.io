@@ -3,7 +3,7 @@ import { getAllPosts } from '@/lib/api';
 
 type Props = React.ComponentPropsWithoutRef<typeof Home>;
 
-const View: React.VFC<Props> = (props: Props) => <Home {...props} />;
+const View: React.FC<Props> = (props: Props) => <Home {...props} />;
 
 export default View;
 
