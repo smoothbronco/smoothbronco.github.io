@@ -5,7 +5,7 @@ type UseDarkMode = () => {
   toggle: () => void;
 };
 
-export const UseDarkMode: UseDarkMode = () => {
+export const useDarkMode: UseDarkMode = () => {
   const [dark, setDark] = useState(false);
   const toggle = useCallback(() => setDark((state) => !state), []);
 
