@@ -10,11 +10,9 @@ export const Profile = () => (
         alt="avatar"
         src="/assets/author.png"
       />
-      <h1 className="text-2xl font-semibold text-primary-1">
-        Takahiro Hayashi
-      </h1>
+      <h1 className="text-2xl font-semibold text-primary-1">TH dev</h1>
     </div>
-    <p className="text-primary-1">大学生のエンジニアブログ</p>
+    <p className="text-primary-1">Software Engineer</p>
     <div className="flex gap-4">
       {sns.map(({ href, icon, label }) => (
         <Link
