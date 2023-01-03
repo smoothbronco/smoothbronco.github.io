@@ -6,7 +6,6 @@ import { Share } from '@/components/features/post/Share';
 import { Toc } from '@/components/features/post/Toc';
 import { ROOT_URL } from '@/config/app';
 import { useBreakPoint } from '@/hooks/useBreakPoint';
-import { joinPath } from '@/lib/joinPath';
 import { PostType } from '@/types/post';
 
 type Props = {
@@ -15,7 +14,6 @@ type Props = {
 
 export const Posts: React.FC<Props> = ({ post }) => {
   const lg = useBreakPoint('lg');
-  const imageURL = joinPath(ROOT_URL, post.ogImage.url);
 
   return (
     <>
@@ -26,11 +24,6 @@ export const Posts: React.FC<Props> = ({ post }) => {
           url: ROOT_URL,
           title: post.title,
           description: post.excerpt,
-          images: [
-            {
-              url: imageURL,
-            },
-          ],
         }}
       />
       <MainLayout

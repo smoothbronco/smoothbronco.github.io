@@ -18,7 +18,6 @@ export const getStaticProps = async ({ params }: Params) => {
     'title',
     'date',
     'slug',
-    'coverImage',
     'excerpt',
     'tags',
   ]).filter((post) => post.tags?.includes(params.tag));

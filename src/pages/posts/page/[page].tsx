@@ -17,13 +17,10 @@ type Params = {
 export const getStaticProps = async ({ params }: Params) => {
   const page = Number(params.page);
 
-  const posts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'coverImage',
-    'excerpt',
-  ]).slice((page - 1) * paginationOffset, page * paginationOffset);
+  const posts = getAllPosts(['title', 'date', 'slug', 'excerpt']).slice(
+    (page - 1) * paginationOffset,
+    page * paginationOffset,
+  );
 
   return {
     props: { posts, maxPage: getMaxPage() },

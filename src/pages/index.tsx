@@ -8,13 +8,7 @@ const View: React.FC<Props> = (props: Props) => <Home {...props} />;
 export default View;
 
 export const getStaticProps = async () => {
-  const posts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'coverImage',
-    'excerpt',
-  ]).slice(0, 4);
+  const posts = getAllPosts(['title', 'date', 'slug', 'excerpt']).slice(0, 4);
 
   return {
     props: { posts },

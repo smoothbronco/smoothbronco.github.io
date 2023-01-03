@@ -1,8 +1,6 @@
 import {
   FacebookIcon,
   FacebookShareButton,
-  PinterestIcon,
-  PinterestShareButton,
   LineIcon,
   LineShareButton,
   HatenaIcon,
@@ -21,7 +19,7 @@ type Props = {
 const SIZE = 40;
 
 export const Share: React.FC<Props> = ({ post }) => {
-  const { title, slug, ogImage } = post;
+  const { title, slug } = post;
 
   const url = `${ROOT_URL}/posts/${slug}`;
   const config = { title, url };
