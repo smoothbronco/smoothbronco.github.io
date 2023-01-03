@@ -1,5 +1,4 @@
 import { Date } from '@/components/common/Date';
-import { Image } from '@/components/common/Image';
 import { Link } from '@/components/common/Link';
 
 type Props = {
