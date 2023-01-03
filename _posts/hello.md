@@ -48,8 +48,9 @@ Next.js を使って Markdown をパースするという最近流行り(?)の�
 
 なお、僕の環境だと a タグが残っていたままだとエラーを吐いていました。
 
-`Error: Invalid <Link> with <a> child. Please remove <a> or use <Link legacyBehavior>.`
-`Learn more: https://nextjs.org/docs/messages/invalid-new-link-with-extra-anchor`
+Error: Invalid <Link> with <a> child.
+Please remove <a> or use <Link legacyBehavior>.
+Learn more: [https://nextjs.org/docs/messages/invalid-new-link-with-extra-anchor](https://nextjs.org/docs/messages/invalid-new-link-with-extra-anchor)
 
 以下の記事で公式からも情報が出ています。
 
@@ -57,8 +58,8 @@ Next.js を使って Markdown をパースするという最近流行り(?)の�
 
 v13.x から更新されたようで、アップグレードする際の対応策も記述があります。
 
-`The next/link child can no longer be <a>.`
-`Add the legacyBehavior prop to use the legacy behavior or remove the <a> to upgrade.`
-`A codemod is available to automatically upgrade your code.`
+The next/link child can no longer be <a>.
+Add the legacyBehavior prop to use the legacy behavior or remove the <a> to upgrade.
+A codemod is available to automatically upgrade your code.
 
 素直に a タグを削除するなり、`legacyBehavior`プロパティを追加してあげるなりするといいみたいです。
