@@ -35,9 +35,6 @@ export const Share: React.FC<Props> = ({ post }) => {
         share
       </div>
       <div className="w-full center gap-4">
-        <PinterestShareButton {...config} media={ogImage.url}>
-          <PinterestIcon size={SIZE} round />
-        </PinterestShareButton>
         <TwitterShareButton
           title={title}
           url={url}

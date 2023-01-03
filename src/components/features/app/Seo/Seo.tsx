@@ -10,13 +10,13 @@ export const Seo = () => {
   return (
     <>
       <DefaultSeo
-        defaultTitle="blog"
-        description="blog"
+        defaultTitle="smoothbronco's blog"
+        description="大学生のエンジニアブログ"
         openGraph={{
           type: 'website',
-          title: 'blog',
-          description: 'blog',
-          site_name: 'blog',
+          title: "smoothbronco's blog",
+          description: '大学生のエンジニアブログ',
+          site_name: "smoothbronco's blog",
           url: ROOT_URL,
           images: [
             {
@@ -30,7 +30,7 @@ export const Seo = () => {
         }}
         twitter={{
           handle: '@smoothbronco',
-          site: '@site',
+          site: "smoothbronco's blog",
           cardType: 'summary_large_image',
         }}
         additionalLinkTags={[

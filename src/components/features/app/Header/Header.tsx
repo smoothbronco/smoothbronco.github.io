@@ -14,24 +14,23 @@ export const Header = () => {
         <Link
           href="/"
           passHref
-          className="select-none text-primary-1 text-2xl md:text-3xl font-bold"
+          className="select-none text-primary-1 text-2xl md:text-xl"
         >
-          Blog
+          smoothbronco weblog
         </Link>
 
         <div className="hidden lg:flex">
           <NavBar />
-        </div>
-
-        <div className="flex gap-4">
-          <button
-            type="button"
-            className="icon-btn"
-            aria-label="toggle theme"
-            onClick={() => toggle()}
-          >
-            <FiSun />
-          </button>
+          <div className="flex gap-4">
+            <button
+              type="button"
+              className="icon-btn"
+              aria-label="toggle theme"
+              onClick={() => toggle()}
+            >
+              <FiSun />
+            </button>
+          </div>
         </div>
       </nav>
     </ContentLayout>
